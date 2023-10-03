@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #21575f;
+  color: #70807f;
+  display: column;
+}
+
+.container h1 {
+  font-family: "Fugaz One", cursive;
+  font-size: 45px;
+  font-weight: 500;
+  padding-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.main-content {
+  width: 70%;
+  min-height: 70vh;
+  background-color: #70807f;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  color: black;
+  margin: auto;
+}
+
+.left-div {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin: auto;
+}
+
+.left-div img{
+  width: 250px;
+}
+
+.left-div h5{
+  font-size: 18px;
+  margin: auto;
+  margin-bottom: 8px;
+}
+
+
+.right-div {
+  background-color: rgb(109, 121, 120);
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+textarea {
+  width: 400px;
+  height: 250px;
+  /* background-color: #403d84; */
+  background-color: #21575f;
+  color: black;
+  font-size: 15px;
+  border: 0;
+  outline: 0;
+  padding: 20px;
+  border-radius: 10px;
+  resize: none;
+  margin-bottom: 30px;
+}
+
+textarea::placeholder {
+  font-size: 16px;
+  color: black;
+}
+
+.row {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+button {
+  background-color: #36a7a3;
+  color: #fff;
+  border-radius: 40px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+button img {
+  width: 16px;
+  margin: 14px;
+}
+
+select {
+  flex: 1;
+  color:black;
+  background-color: #21575f;
+  height: 50px;
+  padding: 0 20px;
+  border-radius: 35px;
+  outline: 0;
+  border: 0;
+  appearance: none;
+  background-image: url("./images/dropdown.png");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position-x: calc(100% - 20px);
+  background-position-y: 20px;
+}
+
+@media only screen and (max-width: 1150px){
+.container{
+  display: flex;
+flex-direction: column;
+}
+
+.main-content{
+  flex-direction: column;
+  width: 500px;
+}
+
+.left-div{
+  height: 230px;
+}
+
+.right-div{
+  margin-top: 10rem;
+}
+}
